@@ -14,3 +14,13 @@ body {
     background-color: var(--background);
     color: var(--texto-destaque);
 }
+
+.principal {
+    background-image: url(/img/Background.png); /* seta a imagem de background */
+    background-repeat: no-repeat; /* background nao ira repetir */
+    background-size: contain; /* o tamanho do background sera de todo o container da tela */
+}
+
+.container {
+    height: 100vh; /* tamanho de 100% da tela */
+}
