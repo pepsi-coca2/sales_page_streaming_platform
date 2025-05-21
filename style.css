@@ -3,6 +3,8 @@
     --botao: #167BF7;
     --texto-destaque: #FFFFFF;
     --texto-comum: #C0C0C0;
+
+/*  --font: 'Inter'; para font-family */
 }
 
 * {
@@ -12,15 +14,55 @@
 
 body {
     background-color: var(--background);
-    color: var(--texto-destaque);
+    color: var(--texto-destaque); 
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    height: 100vh; /* tamanho de 100% da tela */
+    display: grid; /*transforma o container em grid, organizando os elementos filhos em linhas e colunas */
+    grid-template-columns: 50% 50%; /*define duas colunas ocupando 50% da largura do container */
 }
 
 .principal {
     background-image: url(/img/Background.png); /* seta a imagem de background */
     background-repeat: no-repeat; /* background nao ira repetir */
     background-size: contain; /* o tamanho do background sera de todo o container da tela */
+    align-items: center; /*alinha itens ao centro da coluna */
+    text-align: center; /*alinha somente o conteudo, dentro de um bloco */
 }
 
-.container {
-    height: 100vh; /* tamanho de 100% da tela */
+
+.container__botao {
+    background-color: var(--botao);
+    border-radius: 5px;
+    padding: 1em; /* sera do tamanho padrao da fonte */
+    color: var(--texto-destaque);
+    text-decoration: none;
+    display: block; /*o elemento sera exibido em bloco, ocupando toda a largura do elemento pai */
+    margin-bottom: 10px;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: solid 2px var(--texto-destaque);
+}
+
+.aviso_assinatura {
+    font-size: 12px;
+    color: var(--texto-comum)
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.container_imagem__combo {
+    margin: 1em 0 2em 0;
+}
+
+.container__combo {
+    margin: 0 10em;
 }
